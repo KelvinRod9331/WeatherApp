@@ -33,7 +33,7 @@ class WeatherApp extends Component {
     return (
       <div className="weather_app">
       <div className='btn'>
-        <button id='btn' onClick={() => this.setState({clicked: !clicked})}>{clicked ? "Fahrenheit" : "Celsius"}</button>
+        <button id='btn' onClick={() => this.setState({clicked: !clicked})}>{clicked ? "Celsius" : "Fahrenheit"}</button>
       </div>
       {weekly_forecast ? <Forecast values={weekly_forecast} scale={clicked} /> : ''} 
       </div>
